@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:wght@200&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: passion one, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: black;
+}
+
+.dumbbell-icon {
+    filter: invert(18%) sepia(100%) saturate(7497%) hue-rotate(1deg) brightness(103%) contrast(104%);
+    width: 40px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding-left: 8%;
+    font-weight: bold;
+    color: red;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.signup-btn {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevents text from breaking */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 2px;
+    background-image: url('body.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 150px;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.hero h1 span {
+    color: red;
+    font-size: 150px;
+}
+
+.services-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-box .container {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services a, ul {
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: center;
+    gap: 24%;
+    margin-top: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #222;
+}
+
+.cta img {
+    width: 30%;
+}
+
+.cta-text {
+    padding: 30px;
+    font-size: 35px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    margin-top: 350px; /* Push footer to the bottom */
+    font-size: large;
+}
+
+a:hover {
+    color: gray;
+}
+
+.signup-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup-form .submit-button {
+    display: block;
+    width: 35%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.signup-form .submit-button:hover {
+    background-color: darkred;
+}
+
+.back-button {
+    display: block;
+    width: 35%;
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: black;
+}

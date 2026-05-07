@@ -1,0 +1,106 @@
+body{
+    background-color: #f1f1f1;
+    font-family:sans-serif;
+    text-align: center;
+}
+.firstname-box{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+#firstname-box{
+    font-size: 17px;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.lastname-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#lastname-box{
+    font-size: 17px;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.email-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#email-box{
+    font-size: 17px;
+    border: 1px solid #ccc;
+    width: 30%;
+}
+
+.username-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#username-box{
+    font-size: 17px;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.password-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#password-box{
+    font-size: 17px;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.submit-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 30px;
+    color: #333;
+    margin: 40px;
+    background-color : #f1f1f1;
+    padding: 14px 20px;
+}
+
+input:focus+label{
+    transform: translateY(-25px);
+    color: blue;
+}
+
+input:focus{
+    border-color: #0051ff;
+}
+
+.input-field{
+    width: 30%;
+    height: 30px;
+}
+.placeholder{
+    font-size: 17px;
+    color: #aaa;
+    margin: 2px 0;
+}

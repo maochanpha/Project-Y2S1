@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("body.jpg") no-repeat center center fixed;
+        background-size: cover;
+        filter: blur(2px);
+        z-index: -1;
+      }
+
+      .login-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      h2 {
+        color: #000000;
+      }
+
+      .login-container {
+        background-color: rgb(221, 221, 221);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      .login-container h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 50px;
+      }
+
+      .input-group {
+        margin-bottom: 25px;
+      }
+
+      .input-group label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+
+      .input-group input {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 7px;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .login-btn:hover {
+        background-color: #ae0909;
+      }
+
+      a {
+        color: red;
+      }
+
+      a::hover {
+        color: #ae0909;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="/login" method="post">
+        <div class="input-group">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+        />
+        </div>
+        <div class="input-group">
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+        />
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <footer>
+          <p>JOIN US <span>NOW!!!</span></p>
+          <p>Email: info@cambodia.com</p>
+          <p>Socials: @SpringFITKH</p>
+          <p>
+            <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+          </p>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>

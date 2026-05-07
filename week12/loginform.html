@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(149, 178, 191);
+        }
+
+        .container {
+            background: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(3, 3, 3, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dcbaba;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gender-group input {
+            margin-left: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        button {
+            background: #40a9de;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(173, 227, 239);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="First name">
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Last name">
+
+            <label for="nname">Nick Name:</label>
+            <input type="text" id="nname" placeholder="Nick name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <input type="radio" id="female" name="gender" checked>
+                <label for="female">Female</label>
+                
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                
+                <input type="radio" id="other" name="gender">
+                <label for="other">Others</label>
+            </div>
+
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" placeholder="017 312 404">
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Address"></textarea>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
